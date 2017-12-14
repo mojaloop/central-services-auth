@@ -79,7 +79,7 @@ workflows:
             ignore:
               - /bugfix*/
               # - /feature*/
-      - deploy
+      - deploy:
         requires:
           - setup
           - test-unit
@@ -88,4 +88,6 @@ workflows:
             tags:
               only: /v[0-9]+(\.[0-9]+)*/
             branches:
-              only: /feature*/
+              only: 
+                - master
+                - develop
