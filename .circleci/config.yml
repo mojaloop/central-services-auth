@@ -38,7 +38,7 @@ jobs:
           prefix: test
       - store_test_results:
           path: coverage
-  deploy:
+  build:
     docker:
       - image: circleci/node:$NODE_VERSION
     steps:
@@ -79,7 +79,7 @@ workflows:
             ignore:
               - /bugfix*/
               # - /feature*/
-      - deploy:
+      - build:
         requires:
           - setup
           - test-unit
