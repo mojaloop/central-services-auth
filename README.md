@@ -47,3 +47,15 @@ server.auth.strategy('simple', 'basic', { validate: validate });
 server.route({ method: 'GET', path: '/', config: { auth: 'simple' } });
 
 ```
+
+## Tests
+
+Running the tests:
+
+    npm run test
+    npm run test:unit
+    npm run test:xunit
+    npm run test:coverage
+    npm run test:coverage-check
+        
+Tests include code coverage via istanbul. See the test/unit/ folder for testing scripts.
