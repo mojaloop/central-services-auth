@@ -44,7 +44,7 @@
     "npm-check-updates": "4.0.1",
     "pre-commit": "1.2.2",
     "sinon": "8.1.1",
-    "standard": "14.3.1",
+    "standard": "14.3.4",
     "tap-xunit": "2.4.1",
     "tape": "4.13.0"
   },
