@@ -1,6 +1,6 @@
 {
   "name": "@mojaloop/central-services-auth",
-  "version": "9.1.0",
+  "version": "10.2.0",
   "description": "Authentication module for central services",
   "main": "src/index.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "test:xunit": "npm run test:unit | tap-xunit",
     "test:coverage": "istanbul cover tape -- 'test/**/*.test.js'",
     "test:coverage-check": "npm run test:coverage && istanbul check-coverage",
-    "audit:resolve": "SHELL=sh resolve-audit",
-    "audit:check": "SHELL=sh check-audit",
+    "audit:resolve": "SHELL=sh resolve-audit --production",
+    "audit:check": "SHELL=sh check-audit --production",
     "dep:check": "npx ncu -e 2",
     "dep:update": "npx ncu -u"
   },
