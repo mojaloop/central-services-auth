@@ -1,5 +1,9 @@
 # central-services-auth
 
+[![Git Commit](https://img.shields.io/github/last-commit/mojaloop/central-services-auth.svg?style=flat)](https://github.com/mojaloop/central-services-auth/commits/master)
+[![Git Releases](https://img.shields.io/github/release/mojaloop/central-services-auth.svg?style=flat)](https://github.com/mojaloop/central-services-auth/releases)
+[![CircleCI](https://circleci.com/gh/mojaloop/central-services-auth.svg?style=svg)](https://app.circleci.com/pipelines/github/mojaloop/central-services-auth)
+
 Share authentication and authorization code for central services
 
 Registering this module with hapi with install an authentication scheme with the name `'basic'`

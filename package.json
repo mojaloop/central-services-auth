@@ -1,6 +1,6 @@
 {
   "name": "@mojaloop/central-services-auth",
-  "version": "9.1.0",
+  "version": "10.2.0",
   "description": "Authentication module for central services",
   "main": "src/index.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "test:xunit": "npm run test:unit | tap-xunit",
     "test:coverage": "istanbul cover tape -- 'test/**/*.test.js'",
     "test:coverage-check": "npm run test:coverage && istanbul check-coverage",
-    "audit:resolve": "SHELL=sh resolve-audit",
-    "audit:check": "SHELL=sh check-audit",
+    "audit:resolve": "SHELL=sh resolve-audit --production",
+    "audit:check": "SHELL=sh check-audit --production",
     "dep:check": "npx ncu -e 2",
     "dep:update": "npx ncu -u"
   },
@@ -41,12 +41,12 @@
     "faucet": "0.0.1",
     "istanbul": "1.1.0-alpha.1",
     "npm-audit-resolver": "2.2.0",
-    "npm-check-updates": "4.0.1",
+    "npm-check-updates": "6.0.1",
     "pre-commit": "1.2.2",
     "sinon": "8.1.1",
-    "standard": "14.3.1",
+    "standard": "14.3.4",
     "tap-xunit": "2.4.1",
-    "tape": "4.13.0"
+    "tape": "5.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
